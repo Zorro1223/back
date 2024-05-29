@@ -121,3 +121,8 @@ export const vote = async (url, jwt, usersArray) => {
     return error
   }
 }
+
+module.exports =
+  { getData, isResponseOk, normalizeDataObject,
+   normalizeData, getNormalizedGameDataById, getNormalizedGamesDataByCategory,
+   authorize, setJWT, getJWT, removeJWT, getMe, checkIfUserVoted, vote }
